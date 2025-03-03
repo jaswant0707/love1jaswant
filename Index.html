@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/jaswant.css">
+    <title>Love💗| jaswant_0707</title>
+</head>
+
+<body>
+
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+        <div class="body_left">
+            <img src="images/jaswant.gif" alt="" ondragstart='return false;'>
+        </div>
+
+        <div class="body_center love">
+            <div class="block">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="border">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+
+    <div class="title">
+		I Love You 💗
+	</div>
+
+    <div id="copy">
+		<p class="text-center text-white text-sm">Instagram<a
+			href="https://www.instagram.com/jaswant_0707">@jaswant_0707</a></p>
+			
+	  </div>
+ <div id="playBtn" style="position: absolute; top: 10px; right: 10px; background: #fff; padding: 10px; border-radius: 50%; cursor: pointer;">
+    🔇
+</div>
+<!-- Hidden Audio -->
+<div style="display: none">
+    <audio id="background-music" autoplay loop muted>
+        <source src="https://files.catbox.moe/roktxj.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("background-music");
+        var playBtn = document.getElementById("playBtn");
+
+        playBtn.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                audio.play();
+                playBtn.innerHTML = "🔊"; // Show unmute icon
+            } else {
+                audio.muted = true;
+                playBtn.innerHTML = "🔇"; // Show mute icon
+            }
+        });
+    });
+</script>
+
+    <script type="text/javascript" src="js/jaswant.js"></script>
+
+</body>
+
+</html>
